@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Werkstattgespräche 2017</title>
+
+        <!-- meta information -->
+        <meta name="author" content="Thomas Kollatz" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <!-- favicons -->
+        <link rel="shortcut icon" href="resources/img/favicon.png" />
+        <link rel="apple-touch-icon" href="resources/img/apple-touch-icon.png" />
+
+        <!-- CSS reset and grid -->
+        <link href="vendor/normalize/normalize-4.1.1.css" rel="stylesheet" />
+        <link href="vendor/skeleton/skeleton-2.0.4.css" rel="stylesheet" />
+
+        <!-- fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,600italic,400italic,700italic,800,800italic&amp;subset=latin,latin-ext"
+            rel="stylesheet" type="text/css" />
+
+        <!-- styles for included libraries -->
+
+        <!-- chartist -->
+        <link rel="stylesheet" href="vendor/chartist/chartist.min-0.9.7.css" />
+
+        <!-- unite gallery -->
+        <link rel="stylesheet" href="vendor/unitegallery/css/unite-gallery.css" type="text/css" />
+
+        <!-- codemirror -->
+        <link rel="stylesheet" href="vendor/codemirror/lib/codemirror.css" />
+
+        <!-- highlight -->
+        <link rel="stylesheet" href="vendor/highlight/styles/default.css" />
+        <link rel="stylesheet" href="resources/css/hljs.linenumbering.css" />
+
+        <!-- swiper -->
+        <link rel="stylesheet" href="vendor/swiper/swiper.min.css" />
+
+        <!-- magnific popup -->
+        <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup-1.1.0.css" />
+
+        <!-- standard presentation styles -->
+        <link href="resources/css/style.css" rel="stylesheet" />
+
+        <!-- custom presentation styles -->
+        <link href="resources/css/custom.css" rel="stylesheet" />
+
+        <!-- js needed in head -->
+
+        <!-- greuler -->
+        <script src="vendor/d3/d3-3.5.6.js"></script>
+        <script src="vendor/cola/cola.v3.min.js"></script>
+        <script src="vendor/greuler/greuler-0.5.5.min.js"></script>
+
+        <!-- html5 dataset shim for IE -->
+        <script src="vendor/impress/html5-dataset.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+        <div class="fallback-message">
+            <p> Your browser <strong>doesn't support the features required</strong> by
+                impress.mod.js, so you are presented with a simplified version of this presentation. </p>
+            <p> For the best experience please use the latest <strong>Chrome</strong>,
+                    <strong>Safari</strong> or <strong>Firefox</strong> browser. </p>
+        </div>
+        <div id="impress">
+            <div class="step">
+                <h4 class="down-25"><strong>29. Mainz 2017 | ADWL Mainz</strong></h4>
+                <h4 class="up-25"><strong><a href="#">Werkstattgespräche </a></strong></h4>
+                <h1>Digital Humanities<!-- – Digitale Geisteswissenschaften --></h1>
+                <h2 class="red medium">Vom rechten Verhältnis digitaler Methoden &amp;
+                    geisteswissenschaftlicher Fragestellungen</h2>
+                <h4 class="medium">
+                    <strong>Slides:</strong>
+                    <a href="https://kollatzthomas.github.io/2017_Werkstattgespraeche_ADWLM/"
+                        title="View the presentation online"
+                        >https://kollatzthomas.github.io/2017_Werkstattgespraeche_ADWLM/</a>
+                </h4>
+                <h5>
+                    <strong><a href="http://orcid.org/0000-0003-1904-1841">Thomas
+                        Kollatz</a></strong> | <img src="resources/img/Twitter_bird_logo_2012.svg"
+                        alt="Twitter" class="twitter-icon" />
+                    <a href="https://twitter.com/digicademy" title="Digitale Akademie on Twitter"
+                        >@digicademy</a> | <img src="resources/img/Octicons-mark-github.svg"
+                        alt="Twitter" class="gh-icon" />
+                    <a href="https://github.com/#" title="digicademy on GitHub">digicademy</a> | <a
+                        href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>
+                </h5>
+            </div>
+            <div class="step">
+                <dl class="line-height-one-five">
+                    <dt class="red">Close Reading</dt>
+                    <dd>mit der Auszeichnungssprache der <strong>T</strong>ext <strong>E</strong>ncoding
+                        <strong>I</strong>nitiative (TEI)</dd>
+                    <dd><ul class="line-height-one-five"><li>Fokus auf dem Einzelobjekt</li></ul></dd>
+                    <dt class="red">Distant Reading</dt>
+                    <dd>TEI-Auszeichnung als Grundlage für geisteswissenschaftliche Forschungsfragen</dd>
+                    <dd><ul class="line-height-one-five"><li>Fokus auf dem Ensemble, dem Ganzen, dem Kontext …</li></ul></dd>
+                </dl>
+            </div>
+            <div class="step">
+                <h1 class="red">01</h1>
+                <h2 class="line-height-one-five">Textauszeichnung – Encoding </h2>
+            </div>
+            <div class="step">
+                <div class="centered">
+                    <h1 class="red">TEI XML</h1>
+                    <dl>
+                        <dt>TEI</dt>
+                        <dd>Text Encoding Initative</dd>
+                        <dt>XML</dt>
+                        <dd>Extensible Markup Language</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="step">
+                <h1 class="red">Text Encoding Initiative</h1>
+                <!-- <h2 class="line-height-one-five">Semantic statt Typographie</h2>
+                    <ul class="line-height-one-five">
+                        <li>device-independent and system-independent storing and processing of
+                            texts in electronic form</li>
+                        <li>interchange and communication format </li>
+                    </ul> -->
+                <blockquote>The Text Encoding Initiative (TEI) is a consortium which collectively
+                    develops and maintains a standard for the representation of texts in digital
+                    form. Its chief deliverable is a set of Guidelines which specify encoding
+                    methods for machine-readable texts, chiefly in the humanities, social sciences
+                    and linguistics. </blockquote>
+                <p class="right">aus: <a href="http://www.tei-c.org">http://www.tei-c.org</a> [1990ff.]</p>
+            </div>
+            <div class="step">
+                <h1 class="red">Encoding</h1>
+                <ul class="line-height-one-five">
+                    <li>setzt tiefes, fachwissenschaftliches Verständnis der "Sache" voraus</li>
+                    <li>ist in erster Linie <em>close reading</em>
+                        <ul>
+                            <li>dicht am Buchstaben</li>
+                            <li>dicht am Wort</li>
+                            <li>dicht an der Zeile</li>
+                            <li>am Gedicht</li>
+                            <li>am Text</li>
+                            <li>am Ereignis</li>
+                            <li>…</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="step">
+                <h1 class="red">02</h1>
+                <h2 class="line-height-one-five"> Werkstattbeispiel </h2>
+            </div>
+            <div class="step">
+                <h1 class="red">Epigraphik</h1>
+                <div class="row">
+                    <div class="six columns">
+                        <div>
+                            <img src="resources/img/Abb_WS_di-34_561_01.jpg"
+                                style="width:40rem; height:40rem" />
+                            <p class="small">Quelle: <a
+                                    href="http://www.inschriften.net/di034/0561/">DIO 34,
+                                561</a></p>
+                        </div>
+                    </div>
+                    <div class="six columns">
+                        <h2>Inschrift</h2>
+                        <ul>
+                            <li>Epitaph für die Pfarrerstochter Anna Elisabeth Corvinus</li>
+                            <li>Hennweiler – Evangelische Pfarrkirche</li>
+                            <li>2. Juni 1659</li>
+                            <li>DIO 34, 561</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <h2>Transkription</h2>
+                <div class="row">
+                    <div class="three columns">
+                        <img src="resources/img/Abb_WS_di-34_561_01.jpg"
+                            style="width:40rem; height:40rem" />
+                        <p class="small">Quelle: <a href="http://www.inschriften.net/di034/0561/"
+                                >DIO 34, 561</a></p>
+                    </div>
+                    <div class="nine columns">
+                        <pre><code class="linenumbers medium">&lt;lb/&gt;MARC 10
+&lt;lb/&gt;Lasset die Kindlein Zu mir komen
+&lt;lb/&gt;Dann solcher ist das Reich Gottes
+&lt;lb/&gt;ANO 1659 den 22
+&lt;lb/&gt;Junÿ ist im Herren
+&lt;lb/&gt;eingeschlaffen ANNA ELISABETHA, des
+&lt;lb/&gt;Ehrwüdigen v wolgelehrten Herr Johan
+&lt;lb/&gt;MICHAELIS CORVINI Pfarherrs zu Hen
+&lt;lb/&gt;weiller Töchterlein, ihres alters 2 jahr,
+&lt;lb/&gt;vnd 5 monat
+&lt;lb/&gt;Du Armes Würmlein hast genug,
+&lt;lb/&gt;nach deinem alter außgestanden,
+&lt;lb/&gt;eh als dein Seelchen seinen Flug,
+&lt;lb/&gt;genomen aus leibes banden,
+&lt;lb/&gt;[...]t nun in dein Seelig leben,
+&lt;lb/&gt;[.....]s [.................]ben,
+&lt;lb/&gt;
+</code>
+</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <h2>Transkription</h2>
+                <pre><code class="linenumbers medium">&lt;lb/&gt;MARC 10
+&lt;lb/&gt;Lasset die Kindlein Zu mir komen
+&lt;lb/&gt;Dann solcher ist das Reich Gottes
+&lt;lb/&gt;ANO 1659 den 22
+&lt;lb/&gt;Junÿ ist im Herren
+&lt;lb/&gt;eingeschlaffen ANNA ELISABETHA, des
+&lt;lb/&gt;Ehrwüdigen v wolgelehrten Herr Johan
+&lt;lb/&gt;MICHAELIS CORVINI Pfarherrs zu Hen
+&lt;lb break="no"/&gt;weiller Töchterlein, ihres alters 2 jahr,
+&lt;lb/&gt;vnd 5 monat
+&lt;lb/&gt;Du Armes Würmlein hast genug,
+&lt;lb/&gt;nach deinem alter außgestanden,
+&lt;lb/&gt;eh als dein Seelchen seinen Flug,
+&lt;lb/&gt;genomen aus leibes banden,
+&lt;lb/&gt;[...][...]t nun in dein Seelig leben,
+&lt;lb/&gt;[.....]s [.................]ben,
+&lt;lb/&gt;
+</code>
+</pre>
+                <blockquote>
+                    <p><code>&lt;lb&gt;</code>
+                        <strong>Zeilenumbruch (line break)</strong></p>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h2>Textkonstitution</h2>
+                <h3 class="red up-25 after-50">Klammersystem versus semantische Auszeichnungssprache</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Leidener <br/>Klammersystem</th>
+                            <th>TEI <br/>Markup</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>v(nd)</td>
+                            <td><pre><code>&lt;abbr&gt;
+    v&lt;expan&gt;&lt;ex&gt;nd&lt;/ex&gt;&lt;/expan&gt;
+ &lt;/abbr&gt;</code></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Johan(nes)</td>
+                            <td><code>&lt;expan&gt;&lt;abbr&gt;Johan&lt;/abbr&gt;&lt;ex&gt;nis&lt;/ex&gt;&lt;/expan&gt;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>. . . .</td>
+                            <td><code>&lt;gap reason="lost" unit="character" quantity="4"/&gt;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>(---)</td>
+                            <td><code>&lt;gap reason="lost" unit="line"/&gt;</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Typographie <br/><code>. ( [ &lt; { </code></td>
+                            <td>Tags <br/><code>&lt;tag&gt;</code></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>visuell</td>
+                            <td>semantisch</td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+                <blockquote>
+                    <p><code>&lt;gap&gt;</code>
+                        <strong>Auslassung</strong> |
+                        <code>&lt;supplied&gt;</code>
+                        <strong>editorische Ergänzung</strong> |
+                        <code>&lt;unclear&gt;</code>
+                        <strong>schwer lesbare Stelle</strong> |
+                        <code>&lt;expan&gt;</code>
+                        <strong>expansion</strong> |
+                        <code>&lt;ex&gt;</code>
+                        <strong>editorische Auflösung</strong> |
+                        <code>&lt;abbr&gt;</code>
+                        <strong>abbrevation</strong></p>
+                </blockquote>
+                <p>Mehr dazu <a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SG.html">A Gentle Introduction to XML</a></p>
+            </div>
+            
+            <div class="step">
+                <h2>Personen</h2>
+                <pre><code class="linenumbers medium">&lt;lb/&gt;ANO 1659 den 22
+&lt;lb/&gt;Junÿ ist im Herren
+&lt;lb/&gt;eingeschlaffen &lt;persName&gt;ANNA ELISABETHA&lt;/persName&gt;, des
+&lt;lb/&gt;Ehrwüdigen v wolgelehrten Herr &lt;persName&gt;Johan
+&lt;lb/&gt;MICHAELIS CORVINI&lt;/persName&gt; Pfarherrs zu Hen
+&lt;lb break="no"/&gt;weiller Töchterlein, ihres alters 2 jahr,
+&lt;lb/&gt;vnd 5 monat
+</code>
+</pre>
+                <blockquote>
+                    <p><code>&lt;persName&gt;</code>
+                        <strong>Personenname</strong></p>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h2>Personen und ihre Beziehungen</h2>
+                <pre><code class="linenumbers">&lt;particDesc&gt;
+&lt;listPerson&gt;
+  &lt;person xml:id="Corvinus_Anna" sex="2" age="Kleinkind"&gt;
+    &lt;persName&gt;
+      &lt;forename&gt;Anna&lt;/forename&gt;
+      &lt;forename&gt;Elisabeth&lt;/forename&gt;
+      &lt;surname&gt;Corvinus&lt;/surname&gt;
+    &lt;/persName&gt;
+    &lt;death when="1659-06-02"/&gt;
+  &lt;/person&gt;
+      &lt;!-- GND bzw. link auf Pfarrerverzeichnis --&gt;
+  &lt;person xml:id="Corvinus_Michael" sex="1"&gt;
+    &lt;persName&gt;
+      &lt;forename&gt;Johannes&lt;/forename&gt;
+      &lt;forename&gt;Michael&lt;/forename&gt;
+      &lt;surname&gt;Corvinus&lt;/surname&gt;
+    &lt;/persName&gt;
+    &lt;floruit&gt;Pfarrer … &lt;/floruit&gt;
+  &lt;/person&gt;
+  &lt;listRelation&gt;
+    &lt;relation name="ElternKind" active="#Corvinus_Michael" passive="#Corvinus_Anna"/&gt;
+  &lt;/listRelation&gt;
+&lt;/listPerson&gt;
+&lt;/particDesc&gt;
+</code></pre>
+            </div>
+            <!-- 
+            &lt;cit&gt;&lt;ref cRef="Mk 10:14"&gt;MARC 10&lt;/ref&gt; 
+						&lt;lb/&gt;&lt;quote&gt;Lasset die Kindlein Zu mir komen &lt;lb/&gt;Dann solcher ist das
+						Reich Gottes&lt;/quote&gt;&lt;/cit&gt;
+
+            -->
+            <div class="step">
+                <h2>Zitat</h2>
+                <pre><code class="linenumbers medium">&lt;lb/&gt;
+    &lt;cit&gt;
+      &lt;ref cRef="Mk 10:14"&gt;MARC 10&lt;/ref&gt; 
+&lt;lb/&gt;
+      &lt;quote&gt; Lasset die Kindlein Zu mir komen 
+&lt;lb/&gt;         Dann solcher ist das Reich Gottes
+      &lt;/quote&gt;
+    &lt;/cit&gt;
+</code>
+</pre>
+                <blockquote>
+                    <p><code>&lt;cit&gt;</code>
+                        <strong>cited quotation</strong>
+                        <br /><code>&lt;ref&gt;</code>
+                        <strong>reference</strong>
+                        <br /><code>&lt;quote&gt;</code>
+                        <strong>quotation</strong>
+                        <br /></p>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h2>Gedicht</h2>
+                <pre><code class="linenumbers medium">&lt;lg&gt;
+    &lt;l&gt;Du Armes Würmlein hast genug,&lt;/l&gt;
+    &lt;l&gt;nach deinem alter außgestanden,&lt;/l&gt;
+    &lt;l&gt;eh als dein Seelchen seinen Flug,&lt;/l&gt;
+    &lt;l&gt;genomen aus leibes banden,&lt;/l&gt;
+&lt;/lg&gt;
+</code>
+</pre>
+                <blockquote>
+                    <p><code>&lt;lg&gt;</code>
+                        <strong>linegroup</strong>
+                        <br /><code>&lt;l&gt;</code>
+                        <strong>line</strong></p>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h2>Gedicht</h2>
+                <pre><code class="linenumbers medium">&lt;lg type="Kreuzreim" rhyme="ABAB"&gt;
+    &lt;l&gt;Du Armes Würmlein hast genug,&lt;/l&gt;
+    &lt;l&gt;nach deinem alter außgestanden,&lt;/l&gt;
+    &lt;l&gt;eh als dein Seelchen seinen Flug,&lt;/l&gt;
+    &lt;l&gt;genomen aus leibes banden,&lt;/l&gt;
+&lt;/lg&gt;
+</code>
+</pre>
+                <blockquote>
+                    <p><code>&lt;lg&gt;</code>
+                        <strong>linegroup</strong>
+                        <br /><code>&lt;l&gt;</code>
+                        <strong>line</strong></p>
+                </blockquote>
+            </div>
+            <div class="step">
+                <h2>Textteile</h2>
+                <div class="row">
+                    <div class="three columns">
+                        <img src="resources/img/Abb_WS_di-34_561_01.jpg"
+                            style="width:40rem; height:40rem" />
+                        <p class="small">Quelle: <a href="http://www.inschriften.net/di034/0561/"
+                            >DIO 34, 561</a></p>
+                    </div>
+                    <div class="nine columns">
+                <pre><code class="linenumbers">&lt;div type="textpart"&gt;
+    &lt;head&gt;Giebel&lt;/head&gt;
+        &lt;ab&gt;
+            …
+        &lt;/ab&gt;
+&lt;/div&gt;
+&lt;div type="textpart"&gt;
+    &lt;head&gt;Schriftfeld&lt;/head&gt;
+       &lt;ab&gt;
+            …
+       &lt;/ab&gt;
+&lt;/div&gt;
+</code></pre></div>
+            </div>
+            </div>
+            <div class="step">
+                <h2>Schrift und Symbole</h2><div class="row">
+                    <div class="three columns">
+                        <img src="resources/img/Abb_WS_di-34_561_01.jpg"
+                            style="width:40rem; height:40rem" />
+                        <p class="small">Quelle: <a href="http://www.inschriften.net/di034/0561/"
+                            >DIO 34, 561</a></p>
+                    </div>
+                    <div class="nine columns">
+                <pre><code class="linenumbers">&lt;!-- Normdaten: Schriften --&gt;
+&lt;scriptDesc&gt;
+  &lt;scriptNote xml:id="Fr"&gt;Fraktur&lt;/scriptNote&gt;
+  &lt;scriptNote xml:id="Ka"&gt;Kapitalis&lt;/scriptNote&gt;
+&lt;/scriptDesc&gt;
+
+&lt;!-- Dekoration --&gt; 
+&lt;decoDesc&gt;
+  &lt;decoNote&gt;Rabe (Corvinus), darüber die Initialen I M C&lt;/decoNote&gt;
+&lt;/decoDesc&gt;
+</code></pre>
+            </div></div></div>
+            <div class="step">
+                <h2>Objektbeschreibung</h2>
+                <div class="row">
+                    <div class="three columns">
+                        <img src="resources/img/Abb_WS_di-34_561_01.jpg"
+                            style="width:40rem; height:40rem" />
+                        <p class="small">Quelle: <a href="http://www.inschriften.net/di034/0561/"
+                            >DIO 34, 561</a></p>
+                    </div>
+                    <div class="nine columns">
+                <pre><code class="linenumbers">&lt;support&gt;
+&lt;objectType&gt;Grabmal&lt;/objectType&gt;
+    &lt;material&gt;Kalkstein&lt;/material&gt;
+	&lt;dimensions unit="cm"&gt;
+	   &lt;height&gt;68&lt;/height&gt;
+	   &lt;width&gt;60&lt;/width&gt;
+	   &lt;depth&gt;2-2,5&lt;/depth&gt;
+	&lt;/dimensions&gt;
+&lt;/support&gt;
+</code></pre>
+            </div></div></div>
+            <div class="step">
+                <h2>Lokalisierung und Datierung</h2>
+                <pre><code class="linenumbers">&lt;history&gt;
+    &lt;origin&gt;
+		&lt;!-- Normdaten: Zeiten, Regionen, Orte und Ortstypen--&gt;
+		&lt;date notBefore="1659-06-02"&gt;22. Juno 1659&lt;/date&gt;
+		&lt;country&gt;Deutschland&lt;/country&gt;
+		&lt;region&gt;Rheinlandpfalz&lt;/region&gt;
+		&lt;settlement type="city"&gt;Hennweiler&lt;/settlement&gt;
+		&lt;geogName&gt;
+			&lt;location&gt;
+				&lt;geogName&gt;Ev. Pfarrkirche&lt;/geogName&gt;
+			&lt;/location&gt;
+		&lt;/geogName&gt;
+	&lt;/origin&gt;
+&lt;/history&gt;
+</code></pre>
+            </div>
+            <div class="step">
+                <h1 class="red">02</h1>
+                <h2 class="line-height-one-five"> Distanz – Relationen – Bezüge </h2>
+            </div>
+            <div class="step">
+                <h2>Distant Reading – Macroanalyse</h2>
+                <ol>
+                    <li>Textteile – Textstruktur<ul><li>Wie (zeit)typisch sind (Bibel)zitate im Giebel|Kopfteil einer Inschrift?</li><li>Gedichtstrophen als Teil der Eulogie</li></ul></li>
+                    <li>Personen<ul><li>Erwähnungen in anderen Quellen (z.B. Pfarrerverzeichnis)</li>
+                    <li>Vater-Kind | Vater-Tochter Relation</li></ul></li>
+                    <li>räumliche Bezüge
+                    <ul><li>Inschriften in evangelischen Kirchen … </li></ul></li>
+                    <li>zeitliche Bezüge<ul><li>… im 17. Jahrhundert</li></ul></li>
+                    <li>Symbolik<ul><li>Wie häufig sind Text – Bildbezüge [Rabe – Corvinus] … in dieser Region, in dieser Zeit</li></ul></li>    
+                    <li>Text und Kontexte – Intertextualität
+                    <ul><li>Bibelzitat – Wie häufig | wie umstritten ist die Deutung (Grabinschriften, Predigten, Exegese)</li>
+                        <li>Rezeption | Gebrauch literarischer Texte</li></ul></li>                  
+                </ol>
+            </div>
+            <div class="step">
+            <h2>Linked Open Data</h2>
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" data-hash="/step-23/substep-1">
+                            <div class="six columns first">
+                                <a
+                                    href="http://www.woerterbuchnetz.de/DWB?lemma=wurm"
+                                    title="Lemma">
+                                    <img class="pull-up" src="resources/img/DWB_wurm.png"
+                                        style="width:100%" />
+                                </a>
+                                <p class="centered pull-up"> Website: <a
+                                    href="http://www.woerterbuchnetz.de/DWB?lemma=wurm"
+                                    >http://www.woerterbuchnetz.de/DWB?lemma=wurm</a>
+                                </p>
+                            </div>
+                            <div class="six columns last">
+                                <h5><strong>Lemma</strong></h5>
+                                <ul class="even-left xsmall">
+                                    <li> <code>&lt;w <br/>lemmaRef="http://woerterbuchnetz.de/DWB?lemma=wurm"&gt;<br/>Würmlein<br/>&lt;/w&gt;
+                                    </code></li>
+                                    <li> Verknüpfung Inschrift – Deutsches Wörterbuch</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-hash="/step-23/substep-2">
+                            <div class="six columns first">
+                                <a
+                                    href="https://textgridrep.org/browse/-/browse/m3nt_0"
+                                    title="Simon Dach">
+                                    <img class="pull-up" src="resources/img/TGREP_HTML.png"
+                                        style="width:100%" />
+                                </a>
+                                <p class="centered pull-up"> Website: <a
+                                    href="https://textgridrep.org/browse/-/browse/m3nt_0"
+                                    >https://textgridrep.org/browse/-/browse/m3nt_0</a>
+                                </p>
+                            </div>
+                            <div class="six columns last">
+                                <h5><strong>Struktur</strong></h5>
+<pre class="even-left xsmall"><code>&lt;lg type="Kreuzreim" rhyme="ABAB"&gt;
+&lt;l&gt;Du Armes Würmlein hast genug,&lt;/l&gt;
+&lt;l&gt;nach deinem alter außgestanden,&lt;/l&gt;
+&lt;l&gt;eh als dein Seelchen seinen Flug,&lt;/l&gt;
+&lt;l&gt;genomen aus leibes banden,&lt;/l&gt;
+&lt;/lg&gt;</code></pre><ul>
+                                    <li> Verknüpfung mit TGRep</li>
+                                    <li> linegroup </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-hash="/step-23/substep-3">
+                            <div class="six columns first">
+                                <a
+                                    href="https://textgridrep.org/browse/-/browse/m3nt_0"
+                                    title="Simon Dach">
+                                    <img class="pull-up" src="resources/img/Simon_Dach_Trostgedichte.png"
+                                        style="width:100%" />
+                                </a>
+                                <p class="centered pull-up"> Website: <a
+                                    href="https://textgridrep.org/browse/-/browse/m3nt_0"
+                                    >https://textgridrep.org/browse/-/browse/m3nt_0</a>
+                                </p>
+                            </div>
+                            <div class="six columns last">
+                                <h5><strong>Struktur</strong></h5>
+                                <pre class="even-left xsmall"><code>&lt;lg type="Kreuzreim" rhyme="ABAB"&gt;
+&lt;l&gt;Du Armes Würmlein hast genug,&lt;/l&gt;
+&lt;l&gt;nach deinem alter außgestanden,&lt;/l&gt;
+&lt;l&gt;eh als dein Seelchen seinen Flug,&lt;/l&gt;
+&lt;l&gt;genomen aus leibes banden,&lt;/l&gt;
+&lt;/lg&gt;</code></pre><ul><li> Simon Dach (1609-1659)</li>
+    <li> Inschrift bezeugt zeitgenössische Rezeption  </li>
+    
+    
+</ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-hash="/step-23/substep-4">
+                            <div class="six columns first">
+                                <a
+                                    href="https://textgridrep.org/browse/-/browse/m3nt_0"
+                                    title="Simon Dach">
+                                    <img class="pull-up" src="resources/img/TGREP_TEI.png"
+                                        style="width:100%" />
+                                </a>
+                                <p class="centered pull-up"> Website: <a
+                                    href="https://textgridrep.org/browse/-/browse/m3nt_0"
+                                    >https://textgridrep.org/browse/-/browse/m3nt_0</a>
+                                </p>
+                            </div>
+                            <div class="six columns last">
+                                <h5><strong>Trostgedicht</strong></h5>
+                                <ul>
+                                    <li> Verknüpfung mit TGRep – TEI</li>
+                                    <li> linegroup </li>
+    
+</ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-hash="/step-23/substep-5">
+                            <div class="six columns first">
+                                <a
+                                    href="https://textgridrep.org/browse/-/browse/m3nt_0"
+                                    title="Simon Dach">
+                                    <img class="pull-up" src="resources/img/TGREP_ANNO.png"
+                                        style="width:100%" />
+                                </a>
+                                <p class="centered pull-up"> Website: <a
+                                    href="https://textgridrep.org/browse/-/browse/m3nt_0"
+                                    >https://textgridrep.org/browse/-/browse/m3nt_0</a>
+                                </p>
+                            </div>
+                            <div class="six columns last">
+                                <h5><strong>Annotation</strong></h5>
+                                <ul>
+    <li> Verknüpfung mit TGRep</li>
+    <li> linegroup </li>
+    <li> Direktverlinkung durch Annotation</li>
+    
+</ul>
+                            </div>
+                        </div>
+                       
+                        
+                        
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div> 
+            </div>
+            <div class="step">
+                <div>
+                    <h1 class="red">03</h1>
+                    <h2 class="line-height-one-five"> Literatur</h2>
+                </div>
+            </div>
+            <div class="step">
+                <h2>Literatur</h2>
+                <h4>Musterlösung des Werkstattbeispiels</h4>
+                <ul><li><a href="data/DIO_34_561_20170529.xml"
+                ><code>DIO_34_561_20170529.xml</code></a></li></ul> 
+                <h4>EpiDoc</h4>
+                <ul class="small line-height-one-five">
+                    <li><a href="https://sourceforge.net/p/epidoc/wiki/Home/">EpiDoc homepage on
+                            SourceForge</a></li>
+                    <li><a href="https://sourceforge.net/p/epidoc/wiki/MarkupList/">Markup List</a>:
+                        email list for discussions, questions, and help with EpiDoc issues </li>
+                    <li><a href="http://www.stoa.org/epidoc/gl/latest/">EpiDoc Guidelines</a></li>
+                    <li><a href="https://sourceforge.net/p/epidoc/wiki/Stylesheets/">EpiDoc
+                            Stylesheets</a></li>
+                </ul>
+                <h4>Digitale Epigraphik</h4>
+                <ul class="small line-height-one-five">
+                    <li>Julia Flanders; Charlotte Roueché: <a
+                            href="http://www.stoa.org/epidoc/gl/latest/intro-eps-de.html">Erste
+                            Einführung in die Textauszeichnung für Epigraphiker</a>
+                    </li>
+                    <li>H. Cayless; C.M. Roueché; Tom Elliott; Gabriel Bodard (2009): "Epigraphy in
+                        2017." Digital Humanities Quarterly 3.1. <a
+                            href="http://digitalhumanities.org/dhq/vol/3/1/000030/000030.html"
+                            >http://digitalhumanities.org/dhq/vol/3/1/000030/000030.html</a></li>
+                </ul>
+                <h4>TEI</h4>
+                <ul class="small line-height-one-five">
+                    <li><a href="http://tei-c.org">TEI homepage</a></li>
+                    <li><a href="https://github.com/TEIC/TEI-Simple">TEI-Simple</a></li>
+                    <li><a href="http://teipublisher.com/index.html">TEI Publisher</a></li>
+                </ul>
+                <h4>Download</h4>
+                <ul class="small line-height-one-five">
+                    <li>
+                        <a href="https://kollatzthomas.github.io/2017_Werkstattgespraeche_ADWLM/"
+                            title="View the presentation online"
+                            >https://kollatzthomas.github.io/2017_Werkstattgespraeche_ADWLM/</a>
+                    </li>
+                    <li>Alle Inhalte, Illustrationen und Bilder sind frei zur Weiterverwendung und
+                        Modifikation.<br /> Lizenz: <a
+                            href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>, <a
+                            href="http://orcid.org/0000-0003-1904-1841">Thomas Kollatz</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- jquery -->
+        <script src="vendor/jquery/jquery-1.11.0.min.js"></script>
+        <!-- unite gallery -->
+        <script type="text/javascript" src="vendor/unitegallery/js/unitegallery.min.js"></script>
+        <script type="text/javascript" src="vendor/unitegallery/themes/tiles/ug-theme-tiles.js"></script>
+        <script type="text/javascript" src="resources/js/unite.gallery.js"></script>
+        <!-- chartist -->
+        <script src="vendor/chartist/chartist.min-0.9.7.js"></script>
+        <script src="resources/js/chartist.charts.js"></script>
+        <!-- codemirror -->
+        <script src="vendor/codemirror/lib/codemirror.js"></script>
+        <script src="vendor/codemirror/addon/edit/matchbrackets.js"></script>
+        <script src="vendor/codemirror/mode/sparql/sparql.js"></script>
+        <script>
+        var editor = CodeMirror.fromTextArea(document.getElementById("sparql"), {
+            mode: "application/sparql-query",
+            matchBrackets: true,
+            lineNumbers: true,
+            viewportMargin: Infinity
+        });
+    </script>
+        <!-- highlight -->
+        <script src="vendor/highlight/highlight.pack-9.3.0.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script src="resources/js/hljs.linenumbering.js"></script>
+        <!-- swiper -->
+        <script src="vendor/swiper/swiper.min.js"></script>
+        <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 30,
+            hashnav: true
+        });
+    </script>
+        <!-- magnific popup -->
+        <script src="vendor/magnific-popup/jquery.magnific-popup.min-1.1.0.js"></script>
+        <script src="resources/js/magnific-popup.lightbox.js"></script>
+        <!-- impress.mod.js -->
+        <script src="vendor/impress/impress.fork.js"></script>
+        <script src="vendor/impress/impress-slidenum.js"></script>
+        <script>
+         var obj = impress();
+        obj.init(); 
+        initSlideNo(obj);    
+    </script>
+    </body>
+</html>
