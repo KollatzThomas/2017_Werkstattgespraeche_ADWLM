@@ -229,10 +229,7 @@
 &lt;lb/&gt;
 </code>
 </pre>
-                <blockquote>
-                    <p><code>&lt;lb&gt;</code>
-                        <strong>Zeilenumbruch (line break)</strong></p>
-                </blockquote>
+                
             </div>
             <div class="step">
                 <h2>Textkonstitution</h2>
@@ -240,13 +237,13 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>Leidener <br/>Klammersystem</th>
-                            <th>TEI <br/>Markup</th>
+                            <th>Leidener Klammersystem</th>
+                            <th>TEI Markup</th>
                             
                         </tr>
                     </thead>
                     <tbody>
-                        
+                      <!--   
                         <tr>
                             <td>v(nd)</td>
                             <td><pre><code>&lt;abbr&gt;
@@ -254,6 +251,7 @@
  &lt;/abbr&gt;</code></pre>
                             </td>
                         </tr>
+                        -->
                         <tr>
                             <td>Johan(nes)</td>
                             <td><code>&lt;expan&gt;&lt;abbr&gt;Johan&lt;/abbr&gt;&lt;ex&gt;nis&lt;/ex&gt;&lt;/expan&gt;</code>
@@ -270,31 +268,18 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Typographie <br/><code>. ( [ &lt; { </code></td>
-                            <td>Tags <br/><code>&lt;tag&gt;</code></td>
+                            <td>Typographie <code>. ( [ &lt; { </code></td>
+                            <td>Tags <code>&lt;tag&gt;</code></td>
                             
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <td>visuell</td>
                             <td>semantisch</td>
                             
-                        </tr>
+                        </tr> -->
                     </tbody>
                 </table>
-                <blockquote>
-                    <p><code>&lt;gap&gt;</code>
-                        <strong>Auslassung</strong> |
-                        <code>&lt;supplied&gt;</code>
-                        <strong>editorische Ergänzung</strong> |
-                        <code>&lt;unclear&gt;</code>
-                        <strong>schwer lesbare Stelle</strong> |
-                        <code>&lt;expan&gt;</code>
-                        <strong>expansion</strong> |
-                        <code>&lt;ex&gt;</code>
-                        <strong>editorische Auflösung</strong> |
-                        <code>&lt;abbr&gt;</code>
-                        <strong>abbrevation</strong></p>
-                </blockquote>
+                
                 <p>Mehr dazu <a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SG.html">A Gentle Introduction to XML</a></p>
             </div>
             
@@ -309,10 +294,7 @@
 &lt;lb/&gt;vnd 5 monat
 </code>
 </pre>
-                <blockquote>
-                    <p><code>&lt;persName&gt;</code>
-                        <strong>Personenname</strong></p>
-                </blockquote>
+                
             </div>
             <div class="step">
                 <h2>Personen und ihre Beziehungen</h2>
@@ -360,15 +342,6 @@
     &lt;/cit&gt;
 </code>
 </pre>
-                <blockquote>
-                    <p><code>&lt;cit&gt;</code>
-                        <strong>cited quotation</strong>
-                        <br /><code>&lt;ref&gt;</code>
-                        <strong>reference</strong>
-                        <br /><code>&lt;quote&gt;</code>
-                        <strong>quotation</strong>
-                        <br /></p>
-                </blockquote>
             </div>
             <div class="step">
                 <h2>Gedicht</h2>
@@ -380,12 +353,6 @@
 &lt;/lg&gt;
 </code>
 </pre>
-                <blockquote>
-                    <p><code>&lt;lg&gt;</code>
-                        <strong>linegroup</strong>
-                        <br /><code>&lt;l&gt;</code>
-                        <strong>line</strong></p>
-                </blockquote>
             </div>
             <div class="step">
                 <h2>Gedicht</h2>
@@ -397,12 +364,7 @@
 &lt;/lg&gt;
 </code>
 </pre>
-                <blockquote>
-                    <p><code>&lt;lg&gt;</code>
-                        <strong>linegroup</strong>
-                        <br /><code>&lt;l&gt;</code>
-                        <strong>line</strong></p>
-                </blockquote>
+               
             </div>
             <div class="step">
                 <h2>Textteile</h2>
@@ -488,6 +450,38 @@
 	&lt;/origin&gt;
 &lt;/history&gt;
 </code></pre>
+            </div>
+            <div class="step">
+                <h2>Tagliste</h2>
+                <blockquote>
+                <p><code>&lt;lb&gt;</code>
+                    Zeilenumbruch (line break)</p>
+                    <p><code>&lt;gap&gt;</code>
+                        Auslassung |
+                        <code>&lt;supplied&gt;</code>
+                        editorische Ergänzung |
+                        <code>&lt;unclear&gt;</code>
+                        schwer lesbare Stelle |
+                        <code>&lt;expan&gt;</code>
+                        expansion |
+                        <code>&lt;ex&gt;</code>
+                        editorische Auflösung |
+                        <code>&lt;abbr&gt;</code>
+                        abbrevation</p>
+                    <p><code>&lt;persName&gt;</code>
+                        Personenname</p>
+                    <p><code>&lt;cit&gt;</code>
+                        cited quotation | 
+                        <code>&lt;ref&gt;</code>
+                        reference |
+                        <code>&lt;quote&gt;</code>
+                        quotation |
+                        </p>
+                    <p><code>&lt;lg&gt;</code>
+                        linegroup | 
+                        <code>&lt;l&gt;</code>
+                        line</p>                   
+                </blockquote>
             </div>
             <div class="step">
                 <h1 class="red">02</h1>
@@ -683,6 +677,8 @@
                     <li><a href="https://github.com/TEIC/TEI-Simple">TEI-Simple</a></li>
                     <li><a href="http://teipublisher.com/index.html">TEI Publisher</a></li>
                 </ul>
+            </div>
+            <div class="step">
                 <h4>Download</h4>
                 <ul class="small line-height-one-five">
                     <li>
