@@ -2,10 +2,10 @@
 
 # Werkstattgespräche
 
-## 
+## Digital Humanities
 
-This repository contains all code, illustrations and images for the workshop given in Darmstadt on 05./06.04.2017.
+This repository contains all code, illustrations and images for the workshop given in Mainz on 29.05.2017.
 
-The slides are online at https://#
+The slides are online at https://kollatzthomas.github.io/2017_Werkstattgespraeche_ADWLM/
 
-Released under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/), Hans-Werner Bartz, Thomas Kollatz (beide ADWL Mainz)
+Released under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/), Thomas Kollatz (ADWL Mainz)
